@@ -47,3 +47,207 @@ body {
   flex-direction: column;
   gap: 75px;
 }
+
+/* Liste des conversations */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+
+.header{
+    display: flex;
+            justify-content:space-around;
+            align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+
+
+}
+.header {
+    background-color: #008069;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-container img {
+    width: 40px;
+    height: 60px;
+}
+
+.recherche-box {
+    padding: 10px;
+}
+
+.recherche-box input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.recherche-container{
+
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+
+    
+}
+
+.recherche-container input{
+ width: 85%;
+ padding: 10px 20px;
+ border-radius: 20px;
+ 
+
+}
+
+
+.chat-list {
+    background-color: white;
+}
+
+
+.chat {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.chat:hover {
+    background-color: #f5f5f5;
+}
+
+.chat.active {
+    background-color: #e9f5f2;
+}
+
+
+.photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.purple { background-color: purple; }
+.pink { background-color: deeppink; }
+.blue { background-color: dodgerblue; }
+.orange { background-color: orange; }
+
+
+.chat-info {
+    flex: 1;
+}
+
+
+.haut {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.nom {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.alerte {
+    background-color: #25d366;
+    color: white;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+    
+.element {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(135deg, #7b61ff, #512da8);
+}
+
+
+.content {
+    flex-grow: 1;
+}
+
+
+.haut-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Partie-container{
+    background-color: rgb(2, 161, 182);
+    width: 300px;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.haut{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+.info{
+flex:1;
+min-width: 0;
+
+}
+/* Liste des conversations */
