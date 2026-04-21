@@ -32,6 +32,3 @@ Interface de messagerie instantanée moderne inspirée de WhatsApp et Discord.
 
 M. Alamine Ndiaye (alaminend23@gmail.com)
 
-# phase1
-
-# phase1
