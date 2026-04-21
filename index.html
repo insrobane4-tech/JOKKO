@@ -1,104 +1,465 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <title>JOKKO</title>
+    <script src="https://kit.fontawesome.com/c665d6d536.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css" />
+    <title>JOKKO - Messagerie</title>
   </head>
-
   <body>
-    <!--Partie Sidebar-->
     <div class="container">
-      <div class="sidebarIcon">
-        <div class="sidebarLogo">
-          <img src="media/LOGO.JOKKO.png" alt="" width="150" height="100" />
+      <div class="sidebar-icons">
+        <div class="sidebar-logo">
+          <img src="media/LOGO.JOKKO.png" alt="JOKKO Logo" />
         </div>
-        <div class="logoContacts">
-          <div class="Logo">
-            <i
-              class="fa-regular fa-message"
-              style="color: rgb(116, 192, 252)"
-            ></i>
-          </div>
-          <div class="Logo">
-            <i class="fa-solid fa-users" style="color: rgb(116, 192, 252)"></i>
-          </div>
-          <div class="Logo">
-            <i class="fa-solid fa-phone" style="color: white"></i>
-          </div>
-          <div class="Logo">
-            <i class="fa-solid fa-gear" style="color: white"></i>
-          </div>
-        </div>
+        <hr class="hr0" />
+        <div class="icon active"><i class="fa-regular fa-message" style="color: rgb(116, 192, 252)"></i></div>
+        <hr class="hr1" />
+        <div class="icon"><i class="fa-solid fa-users" style="color: rgb(116, 192, 252)"></i></div>
+        <hr class="hr1" />
+        <div class="icon"><i class="fa-solid fa-phone" style="color: white"></i></div>
+        <hr class="hr1" />
+        <div class="icon"><i class="fa-solid fa-gear" style="color: white"></i></div>
       </div>
 
-      <!--Partie Messages-->
+      <div class="conversations-list">
+        <div class="conversations-header">
+          <div class="header-logo-section">
+            <div class="header-logo">
+              <img src="media/LOGO.JOKKO.2.png" alt="JOKKO" />
+            </div>
+            <h2>JOKKO</h2>
+          </div>
+          <div class="boutton_nouveau_chat">
+            <img src="media/icon.png" alt="" />
+          </div>
+        </div>
 
-      <div class="Partie-container">
-        <header class="header">
-          <h1>Messages</h1>
-          <span class="icon">✏️</span>
-        </header>
-
-        <div class="recherche-container">
+        <div class="barre_de_recherche">
           <input
             type="text"
             placeholder="Rechercher ou démarrer une conversation"
           />
         </div>
 
-        <div class="list">
-          <div class="element active">
-            <div class="photo av-purple">SM</div>
-            <div class="info">
-              <div class="haut">
-                <span class="nom">Sophie Martin</span>
-                <span class="date">14:32</span>
-                <span class="alerte">3</span>
+        <div class="contact-scroll">
+          <div class="contact-item active">
+            <div class="photo_de_profil">
+              <img src="media/ISI-KM.jpg" alt="L1" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Licence 1 GL ISI</span>
+                <span class="heure_conversation">14:32</span>
               </div>
-              <div class="Bas">
-                <p class="text">Super ! On se voit demain alor...</p>
+              <div class="apercu_conversation">
+                Allez-vous concentrer sur le projet Mr Ndiaye amoul thiaxane dh🚶🏾‍♂️
+              </div>
+            </div>
+            <div class="epingle">📌</div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/DevClub.jpg" alt="DevClub" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">DevClub💻</span>
+                <span class="heure_conversation">13:45</span>
+              </div>
+              <div class="apercu_conversation">
+                Mohamed Bathily: https://meet.google.com/pqy-ejkx-foo
+              </div>
+            </div>
+             <div class="epingle">📌</div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/ElHadji_Mamadou_Kane.jpg" alt="El-Hadji Mamadou Kane" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">El-Hadji Mamadou Kane</span>
+                <span class="heure_conversation">15:30</span>
+              </div>
+              <div class="apercu_conversation">
+                Baldé: Bane heure lañouy commencé   
               </div>
             </div>
           </div>
 
-          <div class="element">
-            <div class="photo av-pink">JD</div>
-            <div class="info">
-              <div class="haut">
-                <span class="nom">Jean Dupont</span>
-                <span class="date">hier</span>
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Mohamed_Bathily.jpg" alt="Mohamed Bathily" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Mohamed Bathily</span>
+                <span class="heure_conversation">11:23</span>
               </div>
-              <p class="text">Est-ce que tu as reçu le document ?</p>
+              <div class="apercu_conversation">
+                El-Hadji Mamadou Kane: Dafa melni meun nañou commit
+              </div>
             </div>
           </div>
 
-          <div class="element">
-            <div class="photo av-blue">AL</div>
-            <div class="info">
-              <div class="haut">
-                <span class="nom">Équipe Projet</span>
-                <span class="date">mar</span>
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Maja_Baldé.jpg" alt="Maja Baldé" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Baldé</span>
+                <span class="heure_conversation">15:30</span>
               </div>
-              <p class="texte">Marie : La réunion est confirmée ✅</p>
+              <div class="apercu_conversation">
+                Mohamed Bathily: Meun nga déf git pull
+              </div>
             </div>
           </div>
 
-          <div class="element">
-            <div class="photo av-orange">CB</div>
-            <div class="info">
-              <div class="haut">
-                <span class="nom">Claire Bernard</span>
-                <span class="date">lun</span>
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Baye_Mor_Leye.jpg" alt="Baye Mor Leye" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Baye Mor Leye</span>
+                <span class="heure_conversation">dim</span>
               </div>
-              <p class="text">Merci beaucoup pour ton aide !</p>
+                D’accord merci beaucoup frère
+              <div class="apercu_conversation"></div>
             </div>
           </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Joe.jpg" alt="Joe" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Joe</span>
+                <span class="heure_conversation">sam</span>
+              </div>
+              Wa baxna
+              <div class="apercu_conversation"></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Fatou_Ndiaye.jpg" alt="Fatou Ndiaye" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Fatou Ndiaye</span>
+                <span class="heure_conversation">ven</span>
+              </div>
+              <div class="apercu_conversation">Joyeux anniversaire mon frère qu’Allah t’accorde une longue vie yalla arr la samm la mon nouveau oustaz 😂😂😂🎂🎂🎂🎂🎂</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Oumou_Kalsoum_Camara.jpg" alt="Oumou Kalsoum Camara" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Oumou Kalsoum Camara</span>
+                <span class="heure_conversation">jeu</span>
+              </div>
+              <div class="apercu_conversation">😂😂😂ioe enh meuno def ben rek mou diekh il faut guay kholate</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">FS</div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Fatima Sané</span>
+                <span class="heure_conversation">mer</span>
+              </div>
+              <div class="apercu_conversation">Faite vos commandes sur n'importe quelle livre que ce soit développement personnel, romance contemporaine ou dark roman.</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">BF</div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Binetou Fofana</span>
+                <span class="heure_conversation">mar</span>
+              </div>
+              <div class="apercu_conversation">Je trouve que la phrase est exagérée mm</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">NFT</div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Ndeye Fatou Touré</span>
+                <span class="heure_conversation">lun</span>
+              </div>
+              <div class="apercu_conversation">Assalamou aleykum mba yénagui di djam 
+Ça c’est le délai de la commande donc si intervalle bi la sén bagages yi di aksi 
+Merci pour la compréhension </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">AL</div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Aminata Lo</span>
+                <span class="heure_conversation">lun</span>
+              </div>
+              <div class="apercu_conversation">Nn on attend le jour j on chacun projetera et faire sa presentation</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="photo_de_profil">
+              <img src="media/Mory_Ndour.jpg" alt="Mory Ndour" />
+            </div>
+            <div class="contact-info">
+              <div class="haut_contact">
+                <span class="nom_contact">Mory Ndour</span>
+                <span class="heure_conversation">lun</span>
+              </div>
+              <div class="apercu_conversation">Envoyer ma sa photo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="chat-header">
+          <div class="photo_de_profil">
+            <img src="media/ISI-KM.jpg" alt="L1" />
+          </div>
+          <div class="chat-header-info">
+            <div class="chat-header-nom">Licence 1 GL ISI</div>
+            <div class="chat-header-status">48 membres, 43 en ligne</div>
+          </div>
+          <div class="chat-actions">
+            <button class="action-btn">🔍</button>
+            <button class="action-btn">📞</button>
+            <button class="action-btn">⋮</button>
+          </div>
+        </div>
+        <div class="messages-container">
+          <div class="message recu">
+            <div class="message-envoye">Ousmane Ndiaye Responsable</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Le Prof de TechnWeb: <br> 
+                «Bonsoir Ousmane. Je vous ai envoyé
+                quelques sites par mail pour vous inspirer La date du deadline
+                est fixé pour le MERCREDI 23H59»
+              </div>
+              <div class="heure-message">11:15</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Ousmane Ndiaye Responsable</div>
+            <div class="bulle-message0">
+              <div class="message-fichier">
+                <div class="message-bubble1">
+                    <h3><i class="fa-solid fa-file" style="color: rgb(255, 0, 0);"></i>INTRODUCTION <br> AU SQL.docx</h3>
+                    <h6>1 page • 36 Ko • docx</h6>
+                    <br>
+                    <a href="media/INTRODUCTION AU SQL.docx" target="_blank"
+                    download="INTRODUCTION AU SQL.docx" >OUVRIR</a>
+                </div>
+              </div>
+              <div class="heure-message">11:17</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Mory Ndour</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Guiss nguèn maquette you prof bi envoyé affaire yi safna🤣🤣🤣 
+              </div>
+              <div class="heure-message">11:45</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Fatou Ndiaye</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Mane kay bamako guissé dama titt té mangui ni am examen UVS😭😭😭😭
+              </div>
+              <div class="heure-message">11:48</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Joe</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Affaire yi dh amoul ragal ci xel leu rk😅
+              </div>
+              <div class="heure-message">12:07</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Baye Mor Leye</div>
+            <div class="bulle-message2">
+                <div class="message-text" style="background-color: rgb(4, 103, 159); color: white;">
+                    Joe: Affaire yi dh amoul ragal ci xel leu rk😅
+                </div>
+              <div class="message-stickers">
+                <img src="media/sticker1.gif" alt="">
+              </div>
+              <div class="heure-message">12:10</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Trésor</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Ehhh parlez français les gars, je comprends rien😭😭😭
+              </div>
+              <div class="heure-message">12:12</div>
+            </div>
+          </div>
+
+          <div class="message sent">
+            <div class="bulle-message0">
+              <div class="message-text-me">
+                Elle a raison essayons de rester compréhensibles pour tout le monde😅
+              </div>
+              <div class="heure-message-me">12:12</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Ousmane Ndiaye Responsable</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                🚨Les notes de Base de données sont disponibles, <br> 
+                ceux qui veulent les consulter peuvent me contacter en privé <br>
+                pour que je leur envoie leur note.
+              </div>
+              <div class="heure-message">14:32</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Legnane</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Sheuuuut Tons dangua meun yakk ambiance😒
+              </div>
+              <div class="heure-message">14:37</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">MUHAMMAD SAKOR FALL</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Prof bi wax ko mou teuyé ay notam bañou paré souniou ay projet
+              </div>
+              <div class="heure-message">14:38</div>
+            </div>
+          </div>
+
+          <div class="message sent">
+            <div class="bulle-message0">
+              <div class="message-text-me">
+                Res ñata zéro mo am😭😭 
+              </div>
+              <div class="heure-message-me">14:40</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Mory Ndour</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Res mayniou souniou intimité daniou nék ci souniou ay projet👨🏾‍🦯‍➡️👨🏾‍🦯‍➡️👨🏾‍🦯‍➡️
+              </div>
+              <div class="heure-message">14:40</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Pape Mbaye</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Salam gars yi bane groupe mo soxla membre👀
+              </div>
+              <div class="heure-message">16:14</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">El-Hadji Mamadou Kane</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+                Ioe la kane ci gars yi xamé wouniou la ci classe bi🙄
+              </div>
+              <div class="heure-message">16:15</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Mory Ndour</div>
+            <div class="bulle-message0">
+              <div class="message-text">
+               Ioe xana kou bess nga😂😂😂😂
+              </div>
+              <div class="heure-message">16:17</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Baye Mor Leye</div>
+            <div class="bulle-message0">
+                <div class="message-text">
+                    Nieuweul ISI nga tal robinnet yi bayiko nonou 😂😂😂
+                </div>
+              <div class="heure-message">16:18</div>
+            </div>
+          </div>
+
+          <div class="message recu">
+            <div class="message-envoye">Jule</div>
+            <div class="bulle-message0">
+                <div class="message-text">
+                    Xana 2000 nga fay🤣🤣🤣🤣
+                </div>
+              <div class="heure-message">16:20</div>
+            </div>
+          </div>
+
+          <div class="message sent">
+            <div class="bulle-message0">
+              <div class="message-text-me">
+                Allez-vous concentrer sur le projet Mr Ndiaye amoul thiaxane dh🚶🏾‍♂️ 
+              </div>
+              <div class="heure-message-me">16:21</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="chat-input">
+          <button class="action-btn">😊</button>
+          <button class="action-btn">📎</button>
+          <input type="text" placeholder="Écrivez un message..." />
+          <button class="envoie-btn">➤</button>
         </div>
       </div>
     </div>
