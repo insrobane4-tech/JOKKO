@@ -30,5 +30,5 @@ Interface de messagerie instantanée moderne inspirée de WhatsApp et Discord.
 
 ## Professeur
 
-M. Alamine Ndiaye (alaminend23@gmail.com)
+Mr Amadou Lamine Ndiaye 
 
